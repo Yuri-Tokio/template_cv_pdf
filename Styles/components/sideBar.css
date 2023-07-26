@@ -1,5 +1,6 @@
 .side-bar {
-    background-color: #006054;
+    
+    background-color: #271B31;
     flex: 1 1 0;
     padding: 2.5rem;
     color: #FFF;
@@ -19,8 +20,14 @@
     gap: 1rem;
 }
 
-.side-bar p {
-    margin-bottom: .3rem;
+.side-bar li {
+    line-height: 1.4rem;
+    list-style: none;
+    text-align: left;
+}
+
+.side-bar ul {
+    margin: 0px;
 }
 
 .side-bar h3{
