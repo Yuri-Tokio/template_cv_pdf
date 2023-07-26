@@ -6,7 +6,7 @@ btnGenerate.addEventListener('click', () => {
 
   // Configuração do arquivo final de PDF
   const options = {
-    margin: [10, 10, 10, 10],
+    padding: [0.1, 0.1, 0.1, 0.1],
     filename: "CV_Yuri_Tokio.pdf",
     html2canvas: {scale: 2},
     jsPDF: {unit: "mm", format: "a4", orientation: "portrait"}

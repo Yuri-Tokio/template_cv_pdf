@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Helvetica;
+  font-size: 1rem;
+}
+
+p {
+  font-size: .9rem;
+}
+
+h4 {
+  font-size: .9rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}

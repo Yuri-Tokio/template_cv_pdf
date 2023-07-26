@@ -1,0 +1,62 @@
+.main-content {
+    justify-content: left;    
+    flex: 2 1 0;
+    background-color: white;
+    padding: 2.5rem;
+}
+
+.main-content h4 {
+    color: #c2c2c2;
+    font-family: 'Courier New', Courier;
+    margin-bottom: 0.3rem;
+}
+
+.info-title{
+    text-align: center;
+    margin-left: 2rem;
+}
+
+.info-links {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: .9rem;
+}
+
+a {
+    text-decoration: none;
+    color: #1E3050;
+}
+
+a:hover{
+    color: #006054;
+}
+
+.main-content p{
+    text-align: justify;
+}
+
+.main-content h2{
+    margin-bottom: 11.7px;
+}
+
+.formacao {
+    margin-bottom: 2rem;
+}
+
+.card{
+    margin-bottom: 2rem;
+}
+
+.perfil{
+    margin-bottom: 1rem;
+}
+
+ul{
+    margin-left: 1.2rem;
+}
+
+li {
+    line-height: 1.25rem;
+    text-align: justify;
+}

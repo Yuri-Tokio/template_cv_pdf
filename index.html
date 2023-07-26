@@ -1,20 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Template CV</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
-            integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="scripts.js" defer></script>
-    </head>
-    <body>
-        <div id="content">
-            <h1>Olá Mundo</h1>
-            <p>Este será o conteúdo do PDF!</p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template CV</title>
+    <link rel="stylesheet" href="Styles/extends.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <button id="generate-pdf">PDF</button>
+    <div id="content">
+        <div class="side-bar">
+            <div class="header">
+                <img src="./img/Perfil.jpg" alt="Yuri Tokio" />
+                <h1>Yuri Tokio</h1>
+                <p>Desenvolvedor de Software</p>
+            </div>
+
+            <div class="body">
+                <section id="detalhes">
+                    <div class="info-card">
+                        <h3>Detalhes Pessoais</h3>
+                        <p>Barueri - SP, Brasil</p>
+                        <p>(11) 94713-2019</p>
+                        <p>yuri@sheild.com.br</p>
+                    </div>
+                </section>
+                <section id="habilidades">
+                    <div class="info-card">
+                        <h3>Habilidades</h3>
+                        <p>GIT/ GITHUB/ Azure DevOPS</p>
+                        <p>Metodologias Ágeis</p>
+                        <p>Domain-Driven-Design (DDD)</p>
+                        <p>JavaScript, C#, Java</p>
+                        <p>React.Js, Bootstrap, SASS</p>
+                        <p>Node.Js</p>
+                        <p>.NET CORE MVC V.7</p>
+                        <p>Springboot, Junit, Maven</p>
+                        <p>PostgreSQL/ SQL Server</p>
+                        <p>API RESTful, MicroServiços</p>
+                        <p>Docker</p>
+                        <p>JSON/ XML/ SOAP/ Redis Cache</p>
+                    </div>
+                </section>
+                <section id="hobbies">
+                    <div class="info-card">
+                        <h3>Hobbies</h3>
+                        <p>Xadrez</p>
+                        <p>Stand Up</p>
+                        <p>Ler Mangás</p>
+                    </div>
+                </section>
+            </div>
+
         </div>
-        <button id="generate-pdf">Gerar PDF</button>
-    </body>
+        <div class="main-content">
+            <div class="perfil">
+                <h2>Perfil</h2>
+                <p>Com um pouco mais de 2 anos de experiência em desenvolvimento web, trabalhei com ASP.NET,
+                    Node Js, SASS, React, Postman e GIT para criar soluções robustas e escaláveis que atendam às
+                    necessidades dos clientes.
+                </p>
+                <p>
+                    Também sou uma pessoa proativa, orientada para resultados e tenho uma mente analítica. Acredito que
+                    sou capaz enfrentar os desafios do setor e a contribuir significativamente
+                    para a equipe.
+                </p>
+            </div>
+            <div class="experiencias">
+                <h2>Experiências</h2>
+                <div class="card">
+                    <h3>Desenvolvedor Web Junior, Tok & Stok, SP</h3>
+                    <h4>Janeiro 2022 - Outubro 2022 (10 meses)</h4>
+                    <div class="info-card">
+                        <ul type="disk">
+                            <li>Integrações de APIs RESTful e MicroServiços</li>
+                            <li>Desenvolvimento na modelagem DDD</li>
+                            <li>HTTP Request/Response</li>
+                            <li>Criação de projetos responsivos com React.Js e 
+                                ASP.NET CORE MVC</li>
+                            <li>Versionamento de atividades com Github.</li>
+                            <li>Participação ativa em todas as fases da metodologia ágil Scrum.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Quality Assurance Junior, Marisa, SP</h3>
+                    <h4>Janeiro 2021 - Dezembro 2021 (1 ano)</h4>
+                    <div class="info-card">
+                        <ul type="disk">
+                            <li>Criação de planos de testes nos modelos PDD e SDD</li>
+                            <li>TesteRail desenvolvidos e implementados pra garantia da experiência do usuário</li>
+                            <li>RPA com automation anywhere</li>
+                            <li>Participação ativa em todas as fases da metodologia ágil Scrum.</li>
+                            <li>Testes de caixa preta, caixa branca, regressão, usabilidade e segurança</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Menor Aprendiz e Estagiário TI, Otimotex, SP</h3>
+                    <h4>Janeiro 2019 - Fevereiro 2021 (2 anos)</h4>
+                    <div class="info-card">
+                        <ul type="disk">
+                            <li>Construção de formulários HTML5/CSS</li>
+                            <li>MySQL e Firebird</li>
+                            <li>Suporte ao pacote office</li>
+                            <li>Supervisão diária dos sites de divulgação dos empreendimentos</li>
+                            <li>FTP para publicação dos arquivos de imagens em ambiente web</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="formacao">
+                <h2>Formação acadêmica</h2>
+                <h3>Bacharelado Sistemas de Informação, FIAP, SP</h3>
+                <h4>Janeiro 2020 - Dezembro 2023</h4>
+            </div>
+            <div class="links">
+                <h2 class="info-title">Github, Linkedin , Portfolio</h2>
+                <div class="info-links">
+                    <a href="https://github.com/Yuri-Tokio" target="_blank">
+                        <i class="fa-brands fa-github fa-sm" style="font-size: 1.5rem;"></i></a>
+                    <a href="https://www.linkedin.com/in/yuri-tokio-1255331a4/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in fa-sm" style="font-size: 1.5rem;"></i></a>
+                    <a href="https://yuri-tokio.github.io/portfolio_react_vite_deploy/" target="_blank">
+                        <i class="fa-solid fa-folder-tree fa-sm" style="font-size: 1.5rem;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 
 </html>
