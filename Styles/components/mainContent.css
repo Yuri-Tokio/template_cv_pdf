@@ -3,6 +3,8 @@
     flex: 2 1 0;
     background-color: white;
     padding: 2.5rem;
+    width: auto;
+    height: auto;
 }
 
 .main-content h4 {
