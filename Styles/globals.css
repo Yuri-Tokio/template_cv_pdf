@@ -30,3 +30,16 @@ h2 {
 h1 {
   font-size: 1.5rem;
 }
+
+.tecnologias {
+  padding-top: .4rem;
+}
+
+#habilidades ul {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+#habilidades ul li {
+  font-weight: 300;
+}
